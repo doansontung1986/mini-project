@@ -1,0 +1,54 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+.product-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.border-around {
+    border: 2px solid #333;
+    padding: 8px;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-link {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+}

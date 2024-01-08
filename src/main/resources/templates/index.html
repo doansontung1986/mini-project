@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+    <h1>CAR SHOW ROOM ONLINE</h1>
+
+    <a href="/?brandName=Toyota">Toyota</a>
+
+    <a href="/?brandName=Audi">Audi</a>
+
+    <a href="/?brandName=Mazda">Mazda</a>
+
+    <div th:each="product : ${productList}" class="product-container">
+        <div class="product border-around">
+            <a th:href="@{/products/{id} (id=${product.id})}">
+                <img th:src="@{/images/{filename}(filename=${product.thumbnail})}"/>
+            </a>
+
+            <h2 th:text="${product.name}">Car Brand</h2>
+            <p th:text="${product.description}">Car Model</p>
+            <p th:text="|Price: ${product.price}|">Price: $24.99 <span class="discount">$19.99</span></p>
+        </div>
+    </div>
+</body>
+</html>
