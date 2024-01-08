@@ -22,7 +22,8 @@
 
             <h2 th:text="${product.name}">Car Brand</h2>
             <p th:text="${product.description}">Car Model</p>
-            <p th:text="|Price: ${product.price}|">Price: $24.99 <span class="discount">$19.99</span></p>
+            <p><span th:text="|Original Price: ${product.price}|" th:classappend="${product.priceDiscount > 0 ? 'original-price' : '' }">$39.99</span></p>
+            <p th:text="|Discount Price: ${product.priceDiscount}|" th:classappend="${product.priceDiscount == null || product.priceDiscount == 0 ? 'no-display-discount' : '' }">$24.99</p>
         </div>
     </div>
 </body>

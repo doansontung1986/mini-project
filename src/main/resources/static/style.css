@@ -52,3 +52,12 @@ img {
     color: #333;
     cursor: pointer;
 }
+
+.original-price {
+    text-decoration: line-through;
+    color: #888; /* Optional: Set a color for the strikethrough */
+}
+
+.no-display-discount {
+    display: none;
+}

@@ -5,8 +5,7 @@
     "description": "Veyron",
     "thumbnail": "image1.jpg",
     "price": 9991,
-    "rating": 3.6,
-    "priceDiscount": 2228
+    "rating": 3.6
   },
   {
     "id": 2,
@@ -32,8 +31,7 @@
     "description": "90",
     "thumbnail": "image4.jpg",
     "price": 5425,
-    "rating": 1.8,
-    "priceDiscount": 4522
+    "rating": 1.8
   },
   {
     "id": 5,
@@ -68,8 +66,7 @@
     "description": "911",
     "thumbnail": "image7.jpg",
     "price": 7935,
-    "rating": 2.4,
-    "priceDiscount": 2096
+    "rating": 2.4
   },
   {
     "id": 9,
@@ -104,8 +101,7 @@
     "description": "Forester",
     "thumbnail": "image11.jpg",
     "price": 9240,
-    "rating": 2.3,
-    "priceDiscount": 3488
+    "rating": 2.3
   },
   {
     "id": 13,
